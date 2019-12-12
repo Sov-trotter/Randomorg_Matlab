@@ -7,7 +7,7 @@ A toolbox that fetches true random numbers from [Random.org](https://www.random.
 
 ### Following are the available functions : 
 
-`generateIntegers(n, min, max, replacement)`  
+* `generateIntegers(n, min, max, replacement)`  
 
 ##### This method generates true random integers within a user-defined range.  
    * `n` How many random integers you need. Must be within the [1,1e4] range.  
@@ -15,7 +15,7 @@ A toolbox that fetches true random numbers from [Random.org](https://www.random.
    * `max` The upper boundary for the range from which the random numbers will be picked. Must be within the [-1e9,1e9] range.  
    * `replacement` Specifies whether the random numbers should be picked with replacement. The default (`true`) will cause the                      numbers to be picked with replacement, i.e., the resulting numbers may contain duplicate values. If you want the numbers picked to be unique set this value to `false`.  
     
-`generateIntegerSequences(n, length, min, max, replacement)`  
+* `generateIntegerSequences(n, length, min, max, replacement)`  
 
 ##### This method generates uniform or multiform sequences of true random integers within user-defined ranges.
    * `n` An integer specifying the number of sequences requested. Must be within the [1,1000] range.  
