@@ -31,8 +31,7 @@ A toolbox that fetches true random numbers from [Random.org](https://www.random.
               1) For uniform sequences, max must be an integer in the [-1000000000,1000000000] range. 
               2) For multiform sequences, max can be an array with n integers, each specifying the upper boundary of the sequence identified by its index. 
               3) In this case, each value in max must be within the [-1000000000,1000000000] range. 
-   * `replacement` 
-              1) Specifies whether the random numbers should be picked with replacement. The default (`true`) will cause the numbers to be picked with replacement,  
+   * `replacement` Specifies whether the random numbers should be picked with replacement. The default (`true`) will cause the numbers to be picked with replacement,  
               i.e., the resulting numbers may contain duplicate values. If you want the numbers picked to be unique set this value to `false`.  
 
 `generateDecimalFractions(n, decimalPlaces, replacement)`
@@ -41,11 +40,10 @@ A toolbox that fetches true random numbers from [Random.org](https://www.random.
    * `n` How many random decimal fractions you need. Must be within the [1,10000] range. 
    * `decimalPlaces` The number of decimal places to use. Must be within the [1,14] range. 
 
-
 `generateGaussians(n, mean, standardDeviation, significantDigits)`  
 ##### This method generates true random numbers from a Gaussian distribution (also known as a normal distribution).  
-######The form uses a Box-Muller Transform to generate the Gaussian distribution from uniformly distributed numbers.
-   *`n` How many random numbers you need. Must be within the [1,10000] range. 
+(The form uses a Box-Muller Transform to generate the Gaussian distribution from uniformly distributed numbers)
+   * `n` How many random numbers you need. Must be within the [1,10000] range. 
    * `mean` The distribution's mean. Must be within the [-1000000,1000000] range.  
    * `standardDeviation` The distribution's standard deviation. Must be within the [-1000000,1000000] range.  
    * `significantDigits` The number of significant digits to use. Must be within the [2,14] range.  
@@ -56,8 +54,7 @@ A toolbox that fetches true random numbers from [Random.org](https://www.random.
    * `n` How many random strings you need. Must be within the [1,10000] range.  
    * `length` The length of each string. Must be within the [1,32] range. All strings will be of the same length.  
    * `characters` A string that contains the set of characters that are allowed to occur in the random strings. The maximum number of characters is `128`.  
-   * `replacement` 
-              1) Specifies whether the random numbers should be picked with replacement. The default (`true`) will cause the numbers to be picked with replacement,  
+   * `replacement` Specifies whether the random numbers should be picked with replacement. The default (`true`) will cause the numbers to be picked with replacement,  
               i.e., the resulting numbers may contain duplicate values. If you want the numbers picked to be unique set this value to `false`.            
 
 
